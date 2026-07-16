@@ -91,7 +91,55 @@ addContentSlide("O que é Inteligência Artificial?", [
 ], { startY: 1.2 });
 
 // =============================================
-// SLIDE 3 — MODELOS DE IA (montadoras)
+// SLIDE 3 — COMO OS MODELOS FUNCIONAM (estatística / adivinhação)
+// =============================================
+{
+  const s = pres.addSlide();
+  s.background = { color: C.cream };
+  s.addShape(pres.shapes.RECTANGLE, { x: 0, y: 0, w: 10, h: 0.9, fill: { color: C.dark } });
+  s.addText("Como os Modelos de IA Funcionam?", { x: 0.6, y: 0.15, w: 8.8, h: 0.6, fontSize: 24, fontFace: "Georgia", color: C.white, bold: true });
+  s.addShape(pres.shapes.RECTANGLE, { x: 0, y: 0.9, w: 10, h: 0.04, fill: { color: C.terracota } });
+
+  // Left column — explanation
+  s.addText([
+    { text: "Diferente do que muitos pensam, a IA não \"pensa\" ou \"entende\" como uma pessoa.", options: { bold: true, breakLine: true, fontSize: 16, color: C.terracota, paraSpaceAfter: 8 } },
+    { text: "Ela funciona com dois ingredientes:", options: { bold: true, breakLine: true, fontSize: 16, color: C.terracota, paraSpaceAfter: 6 } },
+  ], { x: 0.6, y: 1.2, w: 5.5, h: 1.2, fontSize: 14, fontFace: "Calibri", color: C.text, valign: "top", align: "left", margin: 0, paraSpaceAfter: 4 });
+
+  // Stat card
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 2.3, w: 5.5, h: 0.7, fill: { color: C.white }, shadow: mkShadow() });
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 2.3, w: 0.06, h: 0.7, fill: { color: C.terracota } });
+  s.addText([
+    { text: "1. Estatística: ", options: { bold: true, color: C.dark } },
+    { text: "O modelo foi treinado com bilhões de textos. Ele aprendeu quais palavras costumam aparecer juntas, em que ordem, em cada contexto.", options: { color: C.text } },
+  ], { x: 0.85, y: 2.35, w: 5.1, h: 0.6, fontSize: 13, fontFace: "Calibri", align: "left", valign: "middle", margin: 0 });
+
+  // Prediction card
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 3.15, w: 5.5, h: 0.7, fill: { color: C.white }, shadow: mkShadow() });
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 3.15, w: 0.06, h: 0.7, fill: { color: C.terracota } });
+  s.addText([
+    { text: "2. Previsão: ", options: { bold: true, color: C.dark } },
+    { text: "Quando você pergunta algo, ele calcula: \"qual é a palavra mais provável de vir agora?\" Palavra por palavra, ele constrói a resposta.", options: { color: C.text } },
+  ], { x: 0.85, y: 3.2, w: 5.1, h: 0.6, fontSize: 13, fontFace: "Calibri", align: "left", valign: "middle", margin: 0 });
+
+  // Highlight box on the right
+  s.addShape(pres.shapes.RECTANGLE, { x: 6.5, y: 1.2, w: 3.1, h: 3.8, fill: { color: C.dark }, shadow: mkShadow() });
+  s.addText("Na prática, a IA é uma máquina de", { x: 6.7, y: 1.4, w: 2.7, h: 0.6, fontSize: 13, fontFace: "Calibri", color: C.cream, align: "center", valign: "middle", margin: 0 });
+  s.addText("ADIVINHAR", { x: 6.7, y: 2.0, w: 2.7, h: 0.7, fontSize: 32, fontFace: "Georgia", color: C.gold, bold: true, align: "center", valign: "middle", margin: 0 });
+  s.addText("a próxima\npalavra", { x: 6.7, y: 2.6, w: 2.7, h: 0.8, fontSize: 16, fontFace: "Calibri", color: C.cream, align: "center", valign: "middle", margin: 0 });
+  s.addShape(pres.shapes.RECTANGLE, { x: 6.9, y: 3.5, w: 2.3, h: 0.04, fill: { color: C.gold } });
+  s.addText("Ela é muito boa nisso,\nmas continua sendo\num palpite estatístico.", { x: 6.7, y: 3.6, w: 2.7, h: 1.0, fontSize: 12, fontFace: "Calibri", color: C.cream, align: "center", valign: "middle", margin: 0 });
+
+  // Comparison bar at bottom
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.6, y: 4.3, w: 5.5, h: 0.9, fill: { color: C.white }, shadow: mkShadow() });
+  s.addText([
+    { text: "Pense num corretor de texto do celular: ", options: { bold: true, color: C.terracota } },
+    { text: "ele sugere a próxima palavra baseado no que você já digitou. A IA generativa faz a mesma coisa — só que em escala gigante e com muito mais contexto.", options: { color: C.text } },
+  ], { x: 0.8, y: 4.4, w: 5.1, h: 0.7, fontSize: 12, fontFace: "Calibri", align: "left", valign: "middle", margin: 0 });
+}
+
+// =============================================
+// SLIDE 4 — MODELOS DE IA (montadoras)
 // =============================================
 addContentSlide("Modelos de IA = Montadoras de Veículos", [
   { text: "Se a IA é a indústria automotiva, os modelos de IA são as montadoras:", options: { bold: true, breakLine: true, fontSize: 16, color: C.terracota, paraSpaceAfter: 8 } },
@@ -129,7 +177,7 @@ addContentSlide("Modelos de IA = Montadoras de Veículos", [
 }
 
 // =============================================
-// SLIDE 4 — FERRAMENTAS DE IA GENERATIVA (modelos de carro)
+// SLIDE 5 — FERRAMENTAS DE IA GENERATIVA (modelos de carro)
 // =============================================
 addContentSlide("Ferramentas de IA Generativa = Carros que você dirige", [
   { text: "Se os modelos são montadoras, as ferramentas são os carros que chegam às concessionárias:", options: { bold: true, breakLine: true, fontSize: 16, color: C.terracota, paraSpaceAfter: 8 } },
@@ -141,7 +189,7 @@ addContentSlide("Ferramentas de IA Generativa = Carros que você dirige", [
 ], { startY: 1.1 });
 
 // =============================================
-// SLIDE 5 — AGENTES DE IA (carro autônomo / motorista)
+// SLIDE 6 — AGENTES DE IA (carro autônomo / motorista)
 // =============================================
 addContentSlide("Agentes de IA = Carros com Piloto Automático", [
   { text: "Até aqui, as ferramentas dependem de você dar os comandos (o prompt):", options: { bold: true, breakLine: true, fontSize: 16, color: C.terracota, paraSpaceAfter: 8 } },
@@ -153,7 +201,54 @@ addContentSlide("Agentes de IA = Carros com Piloto Automático", [
 ], { startY: 1.1 });
 
 // =============================================
-// SLIDE 6 — SKILLS (manual do proprietário)
+// SLIDE 7 — CONTEXTO E REGRAS (dicas para dirigir melhor)
+// =============================================
+{
+  const s = pres.addSlide();
+  s.background = { color: C.cream };
+  s.addShape(pres.shapes.RECTANGLE, { x: 0, y: 0, w: 10, h: 0.9, fill: { color: C.dark } });
+  s.addText("Contexto e Regras = Instruções para a IA \"adivinhar\" melhor", { x: 0.6, y: 0.15, w: 8.8, h: 0.6, fontSize: 22, fontFace: "Georgia", color: C.white, bold: true });
+  s.addShape(pres.shapes.RECTANGLE, { x: 0, y: 0.9, w: 10, h: 0.04, fill: { color: C.terracota } });
+
+  // Left: the problem
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y: 1.2, w: 4.3, h: 3.0, fill: { color: C.white }, shadow: mkShadow() });
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y: 1.2, w: 4.3, h: 0.45, fill: { color: C.terracota } });
+  s.addText("Sem instruções, a IA \"chuta\"", { x: 0.7, y: 1.25, w: 3.9, h: 0.35, fontSize: 14, fontFace: "Georgia", color: C.white, bold: true, align: "left", valign: "middle", margin: 0 });
+  s.addText([
+    { text: "Se você perguntar \"Crie uma atividade\" sem contexto:", options: { bold: true, breakLine: true, fontSize: 13, paraSpaceAfter: 4 } },
+    { text: "• Pode vir para qualquer série", options: { bullet: true, breakLine: true, fontSize: 12 } },
+    { text: "• Pode ignorar o regimento da escola", options: { bullet: true, breakLine: true, fontSize: 12 } },
+    { text: "• Pode usar linguagem inadequada", options: { bullet: true, breakLine: true, fontSize: 12 } },
+    { text: "• Pode sugerir algo contra os valores da ACSC", options: { bullet: true, breakLine: true, fontSize: 12, paraSpaceAfter: 6 } },
+    { text: "O palpite dela pode ser genérico ou errado.", options: { italic: true, fontSize: 12, color: C.lightText } },
+  ], { x: 0.7, y: 1.8, w: 3.9, h: 2.2, fontSize: 13, fontFace: "Calibri", color: C.text, align: "left", valign: "top", margin: 0 });
+
+  // Right: the solution
+  s.addShape(pres.shapes.RECTANGLE, { x: 5.2, y: 1.2, w: 4.3, h: 3.7, fill: { color: C.dark }, shadow: mkShadow() });
+
+  s.addText("Como melhorar o palpite?", { x: 5.4, y: 1.3, w: 3.9, h: 0.4, fontSize: 15, fontFace: "Georgia", color: C.gold, bold: true, align: "left", valign: "middle", margin: 0 });
+
+  const tipItems = [
+    { text: "Dê CONTEXTO", options: { bold: true, breakLine: true, fontSize: 13, color: C.gold, paraSpaceAfter: 2 } },
+    { text: "\"Sou professor do 4º ano do Colégio Divino Coração...\"", options: { breakLine: true, fontSize: 11, color: C.cream, paraSpaceAfter: 6 } },
+    { text: "Estabeleça REGRAS", options: { bold: true, breakLine: true, fontSize: 13, color: C.gold, paraSpaceAfter: 2 } },
+    { text: "\"...respeitando o PPPP da ACSC e a BNCC\"", options: { breakLine: true, fontSize: 11, color: C.cream, paraSpaceAfter: 6 } },
+    { text: "Defina o FORMATO DE SAÍDA", options: { bold: true, breakLine: true, fontSize: 13, color: C.gold, paraSpaceAfter: 2 } },
+    { text: "\"Estruture em uma tabela com colunas: objetivos, atividades, recursos, avaliação\"", options: { breakLine: true, fontSize: 11, color: C.cream, paraSpaceAfter: 6 } },
+    { text: "Exija EXEMPLOS", options: { bold: true, breakLine: true, fontSize: 13, color: C.gold, paraSpaceAfter: 2 } },
+    { text: "\"Inclua um exemplo de parecer descritivo\"", options: { breakLine: true, fontSize: 11, color: C.cream, paraSpaceAfter: 6 } },
+    { text: "Quanto mais informação você der, mais preciso será o \"palpite\" da IA.", options: { bold: true, breakLine: true, fontSize: 12, color: C.gold, italic: true } },
+  ];
+
+  s.addText(tipItems, { x: 5.4, y: 1.8, w: 3.9, h: 2.9, fontSize: 13, fontFace: "Calibri", color: C.text, align: "left", valign: "top", margin: 0 });
+
+  // Bottom bar
+  s.addShape(pres.shapes.RECTANGLE, { x: 0.5, y: 4.5, w: 4.3, h: 0.7, fill: { color: C.dark } });
+  s.addText("É aí que entram as SKILLS!", { x: 0.5, y: 4.5, w: 4.3, h: 0.7, fontSize: 16, fontFace: "Georgia", color: C.gold, bold: true, align: "center", valign: "middle", margin: 0 });
+}
+
+// =============================================
+// SLIDE 8 — SKILLS (manual do proprietário)
 // =============================================
 {
   const s = pres.addSlide();
@@ -192,7 +287,7 @@ addContentSlide("Agentes de IA = Carros com Piloto Automático", [
 }
 
 // =============================================
-// SLIDE 7 — MÃO NA MASSA (passo a passo)
+// SLIDE 9 — MÃO NA MASSA (passo a passo)
 // =============================================
 {
   const s = pres.addSlide();
@@ -228,7 +323,7 @@ addContentSlide("Agentes de IA = Carros com Piloto Automático", [
 }
 
 // =============================================
-// SLIDE 8 — EXEMPLO PRÁTICO
+// SLIDE 10 — EXEMPLO PRÁTICO
 // =============================================
 {
   const s = pres.addSlide();
@@ -261,7 +356,7 @@ addContentSlide("Agentes de IA = Carros com Piloto Automático", [
 }
 
 // =============================================
-// SLIDE 9 — RECAP
+// SLIDE 11 — RECAP
 // =============================================
 {
   const s = pres.addSlide();
@@ -302,7 +397,7 @@ addContentSlide("Agentes de IA = Carros com Piloto Automático", [
 }
 
 // =============================================
-// SLIDE 10 — FINAL
+// SLIDE 12 — FINAL
 // =============================================
 {
   const s = pres.addSlide();
