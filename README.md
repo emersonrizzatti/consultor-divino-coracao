@@ -39,6 +39,6 @@ Skill de apoio aos professores do **Colégio Divino Coração** (Alegrete/RS), m
 
 ## Como Usar
 
-1. Copie a pasta `CDC/` para o diretório de skills do Claude
-2. Ou use o arquivo `skill-assistente-pedagogico.md` como skill avulsa
-3. Faça perguntas como professor do Colégio Divino Coração sobre planos de aula, avaliações ou engajamento de turmas
+1. [Baixar skill-assistente-pedagogico.md](https://raw.githubusercontent.com/emersonrizzatti/consultor-divino-coracao/main/skill-assistente-pedagogico.md) (clique com o botão direito e "Salvar link como...") ou [Baixar CDC/SKILL.md](https://raw.githubusercontent.com/emersonrizzatti/consultor-divino-coracao/main/CDC/SKILL.md) (versão completa para todas as etapas)
+2. Faça perguntas como professor do Colégio Divino Coração sobre planos de aula, avaliações ou engajamento de turmas
+3. A IA irá responder com base nas informações contidas no arquivo Skill.
