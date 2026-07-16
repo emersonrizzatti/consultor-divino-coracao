@@ -17,8 +17,10 @@ Skill de apoio aos professores do **Colégio Divino Coração** (Alegrete/RS), m
 │       └── objetivos-gerais-da-escola.md
 ├── skill-assistente-pedagogico.md # Skill focada no Ensino Fundamental (273 linhas)
 ├── LDB_texto_integral.md          # Lei de Diretrizes e Bases da Educação (texto compilado)
-├── skill-creator/                 # Framework para criação de skills
-└── pdf/                           # Skill para processamento de PDFs
+├── docx/                          # Criação e edição de documentos Word (.docx)
+├── pdf/                           # Leitura, extração e manipulação de PDFs
+├── pptx/                          # Criação e edição de apresentações (.pptx)
+└── skill-creator/                 # Criação e avaliação de skills
 ```
 
 ## Skills Inclusas
@@ -42,3 +44,10 @@ Skill de apoio aos professores do **Colégio Divino Coração** (Alegrete/RS), m
 1. [Baixar skill-assistente-pedagogico.md](https://raw.githubusercontent.com/emersonrizzatti/consultor-divino-coracao/main/skill-assistente-pedagogico.md) (clique com o botão direito e "Salvar link como...") ou [Baixar CDC/SKILL.md](https://raw.githubusercontent.com/emersonrizzatti/consultor-divino-coracao/main/CDC/SKILL.md) (versão completa para todas as etapas)
 2. Faça perguntas como professor do Colégio Divino Coração sobre planos de aula, avaliações ou engajamento de turmas
 3. A IA irá responder com base nas informações contidas no arquivo Skill.
+
+## Ferramentas
+
+- **docx/** — Cria, edita e formata documentos Word (.docx) com sumário, cabeçalhos, numeração de páginas e timed e alterações controladas.
+- **pdf/** — Extrai texto e tabelas de PDFs, combina, divide, aplica OCR, preenche formulários e converte documentos para PDF.
+- **pptx/** — Cria e edita apresentações de slides (.pptx) a partir de texto, templates ou decks existentes, incluindo notas do apresentador.
+- **skill-creator/** — Cria novas skills do zero, edita skills existentes, executa testes automatizados (evals) e mede o desempenho das skills.
