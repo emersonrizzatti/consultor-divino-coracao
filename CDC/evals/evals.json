@@ -1,0 +1,23 @@
+{
+  "skill_name": "apoio-docente-cdc",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "oi, sou professor de matemática do 7º ano do Colégio Divino Coração em Alegrete. preciso de um plano de aula sobre equações do 1º grau pra semana que vem. a turma é bem heterogênea — tem uns 5 alunos com dificuldade e uns 3 que já estão muito adiantados. a escola usa o sistema trimestral e a média é 7. gostaria de incluir uma atividade prática e também sugestões de como engajar os alunos que estão desinteressados.",
+      "expected_output": "Um plano de aula completo para 7º ano EF seguindo a estrutura padrão da skill, com objetivos alinhados à BNCC, metodologia com diferenciação pedagógica, rubrica de avaliação com critérios claros na escala 0-10, e estratégias de engajamento específicas para a faixa etária (EF Anos Finais), respeitando o sistema trimestral e o PPPP da ACSC.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "sou professora da educação infantil (pré-escola) no Divino Coração e preciso escrever os pareceres descritivos do 1º trimestre. a turma tem 18 crianças de 4-5 anos. gostaria de um modelo de parecer que cubra os aspectos cognitivos, socioemocionais e espirituais, alinhado com o carisma da escola. também queria ideias de atividades lúdicas pra trabalhar a solidariedade e a partilha com os pequenos, já que a pastoral escolar tá pedindo um projeto pra quaresma.",
+      "expected_output": "Um modelo de parecer descritivo trimestral adaptado para a Educação Infantil (pré-escola), cobrindo aspectos cognitivos, socioemocionais e espirituais, alinhado ao Carisma Congregacional Regina Protmann. Além disso, sugestões de atividades lúdicas sobre solidariedade e partilha para a Quaresma, articuladas com a Pastoral Escolar e o PPPP.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "vou coordenar o conselho de classe do 9º ano amanhã e to meio perdida. tenho 32 alunos, algumas notas baixas em português e matemática, e uns 4 alunos que tão com mais de 25% de falta. preciso de uma ficha pra organizar os dados de cada aluno, saber como lidar com os casos de progressão parcial, e também de estratégias pra ajudar os professores a lidar com uma turma que tá muito dispersa ultimamente. a escola é o colégio divino coração aqui de alegrete.",
+      "expected_output": "Uma ficha individual para conselho de classe do 9º ano EF, com orientações sobre: análise de notas (escala 0-10, média 7,0), frequência mínima de 75% e Estudos Complementares Compensatórios para infrequência >25%, critérios de Progressão Parcial (até 2 componentes), e estratégias de engajamento para turmas dispersas nos Anos Finais, tudo conforme o Regimento ACSC e o PPPP.",
+      "files": []
+    }
+  ]
+}
